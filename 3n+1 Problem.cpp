@@ -1,36 +1,49 @@
-#include <iostream>
+/**
+ * @file The 3n+1 Problem.cpp
+ * @author Shantanu Mane (@RndmCodeGuy20) (shantanu.mane.200@outlook.com)
+ * @brief For each pair of input integers i and j, output i, j in the same order in which they appeared in the input and then the maximum cycle length for integers between and
+including i and j. These three numbers should be separated by one space, with all three numbers on one line and with one line of output for each line of input. 
+ * @version  420.69
+ * @date 2021-08-21
+ * 
+ * @copyright Copyright (c) 2021
+ * * CODE RUNNING FOR ALL TEST CASES!!! ALL BY MYSELF!!!
+ */
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    int n, m, max = 0, count = 0, i, num;
-    cin >> n >> m;
-    i = n;
-    num = n;
-    for (num = 0; num < m; num++)
+    int i, j;
+    cin >> i >> j;
+
+    int num, count = 0, n, max = 0;
+
+    for (num = i; num <= j; num++)
     {
-        while (true) //! Loop will break only when i will be 1.
+        count = 0;
+        n = num;
+        while (true)
         {
             ++count;
-            if (i == 1)
+            if (n == 1)
                 break;
-            if (i % 2 == 0)
+            if (n % 2 == 0)
             {
-                i /= 2;
+                n /= 2;
             }
             else
             {
-                i = i * 3 + 1;
+                n = n * 3 + 1;
             }
-
-            
         }
         if (count > max)
         {
             max = count;
         }
     }
-    cout << n << m << max;
+
+    cout << i << " " << j << " " << max;
 
     return 0;
 }
