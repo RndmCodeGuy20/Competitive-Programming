@@ -1,8 +1,7 @@
 /**
  * @file The 3n+1 Problem.cpp
  * @author Shantanu Mane (@RndmCodeGuy20) (shantanu.mane.200@outlook.com)
- * @brief For each pair of input integers i and j, output i, j in the same order in which they appeared in the input and then the maximum cycle length for integers between and
-including i and j. These three numbers should be separated by one space, with all three numbers on one line and with one line of output for each line of input. 
+ * @brief For each pair of input integers i and j, output i, j in the same order in which they appeared in the input and then the maximum cycle length for integers between and including i and j. These three numbers should be separated by one space, with all three numbers on one line and with one line of output for each line of input. 
  * @version  420.69
  * @date 2021-08-21
  * 
